@@ -1,0 +1,45 @@
+body {
+  background-color: beige;
+}
+
+p {
+  font-size: 24px;
+}
+
+#mainPanel,
+#sidePanel {
+  display: inline-block;
+  vertical-align: top;
+}
+
+#mainPanel {
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+#dieBox {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 15px;
+}
+
+button {
+  padding: 5px 10px;
+}
+
+#rollButton {
+  margin-right: 15px;
+}
+
+#player1Paragraph,
+#player2Paragraph,
+#scoreParagraph,
+#messageParagraph {
+  margin-top: 0;
+  margin-bottom: 18px;
+}
+
+.turn,
+#messageParagraph {
+  color: #ff4c00;
+}

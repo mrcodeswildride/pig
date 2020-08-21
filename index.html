@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Pig</title>
+	<meta name="viewport" content="width=device-width, initial-scale=0.75">
+	<link href="style.css" rel="stylesheet">
+	<link href="1.gif" rel="prefetch">
+	<link href="2.gif" rel="prefetch">
+	<link href="3.gif" rel="prefetch">
+	<link href="4.gif" rel="prefetch">
+	<link href="5.gif" rel="prefetch">
+	<link href="6.gif" rel="prefetch">
+	<script src="script.js" defer>
+
+	</script>
+</head>
+
+<body>
+	<h1>Pig</h1>
+
+	<p>
+		Two player game. Each turn, roll the die as many times as you like. If you roll a 1, your turn is over, and you earn no points. If you pass, your turn is over, and you add the points to your total. First player to reach 100 or more wins.
+	</p>
+
+  <div id="mainPanel">
+    <div id="dieBox">
+      <img src="1.gif" id="die">
+    </div>
+    <button id="rollButton">Roll</button>
+    <button id="passButton" disabled>Pass</button>
+  </div>
+
+  <div id="sidePanel">
+    <p id="player1Paragraph" class="turn">Player one: 0</p>
+    <p id="player2Paragraph">Player two: 0</p>
+    <p id="scoreParagraph">Score this turn: 0</p>
+    <p id="messageParagraph"></p>
+  </div>
+</body>
+
+</html>
