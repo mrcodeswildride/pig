@@ -20,13 +20,15 @@
 	<h1>Pig</h1>
 
 	<p>
-		Two player game. Each turn, roll the die as many times as you like. If you roll a 1, your turn is over, and you earn no points. If you pass, your turn is over, and you add the points to your total. First player to reach 100 or more wins.
+		Two player game. Each turn, roll the die as many times as you like. If you roll a 1, your turn is over, and you earn no points.
+		If you pass, your turn is over, and you add the points to your total. First player to reach 100 or more wins.
 	</p>
 
-  <div id="mainPanel">
-    <div id="dieBox">
-      <img src="1.gif" id="die">
+	<div id="mainPanel">
+		<div id="dieBox">
+			<img src="1.gif" id="die">
     </div>
+
     <button id="rollButton">Roll</button>
     <button id="passButton" disabled>Pass</button>
   </div>
@@ -35,6 +37,8 @@
     <p id="player1Paragraph" class="turn">Player one: 0</p>
     <p id="player2Paragraph">Player two: 0</p>
     <p id="scoreParagraph">Score this turn: 0</p>
+
+    <button id="switchButton">Switch turn</button>
     <p id="messageParagraph"></p>
   </div>
 </body>

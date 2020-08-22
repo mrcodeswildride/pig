@@ -5,6 +5,8 @@ let passButton = document.getElementById(`passButton`)
 let player1Paragraph = document.getElementById(`player1Paragraph`)
 let player2Paragraph = document.getElementById(`player2Paragraph`)
 let scoreParagraph = document.getElementById(`scoreParagraph`)
+
+let switchButton = document.getElementById(`switchButton`)
 let messageParagraph = document.getElementById(`messageParagraph`)
 
 let player1 = 0
@@ -14,6 +16,7 @@ let turn = `Player 1`
 
 rollButton.addEventListener(`click`, roll)
 passButton.addEventListener(`click`, pass)
+switchButton.addEventListener(`click`, pass)
 
 function roll() {
   die.style.display = `none`
@@ -30,16 +33,20 @@ function showDie() {
 
   if (dieRoll == 1) {
     score = 0
-    pass()
+    scoreParagraph.innerHTML = `Score this turn: ${score}`
+
+    switchButton.style.display = `block`
   }
   else {
     score = score + dieRoll
     scoreParagraph.innerHTML = `Score this turn: ${score}`
 
     if (turn == `Player 1` && player1 + score >= 100) {
+      messageParagraph.style.display = `block`
       messageParagraph.innerHTML = `Player 1 wins`
     }
     else if (turn == `Player 2` && player2 + score >= 100) {
+      messageParagraph.style.display = `block`
       messageParagraph.innerHTML = `Player 2 wins`
     }
     else {
@@ -72,4 +79,5 @@ function pass() {
 
   rollButton.disabled = false
   passButton.disabled = true
+  switchButton.style.display = `none`
 }

@@ -20,7 +20,7 @@ p {
 #dieBox {
   width: 120px;
   height: 120px;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 }
 
 button {
@@ -33,13 +33,25 @@ button {
 
 #player1Paragraph,
 #player2Paragraph,
-#scoreParagraph,
-#messageParagraph {
+#scoreParagraph {
   margin-top: 0;
   margin-bottom: 18px;
 }
 
-.turn,
-#messageParagraph {
+.turn {
   color: #ff4c00;
+}
+
+#switchButton {
+  display: none;
+  background-color: red;
+  color: white;
+  margin-top: 27px;
+}
+
+#messageParagraph {
+  display: none;
+  color: #ff4c00;
+  margin-top: 28px;
+  margin-bottom: 0;
 }
